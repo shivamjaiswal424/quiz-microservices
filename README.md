@@ -110,22 +110,22 @@ All services accessible through the gateway:
 
 ## 📡 Example Flow
 
-- Add questions → POST /question/add
+- **Add questions** → POST /question/add
 
-- Create quiz → POST /quiz/create (specify category & number of questions)
+- **Create quiz** → POST /quiz/create (specify category & number of questions)
 
-- Fetch quiz → GET /quiz/get/{id}
+- **Fetch quiz** → GET /quiz/get/{id}
 
-- Submit quiz → POST /quiz/submit/{id}
+- **Submit quiz** → POST /quiz/submit/{id}
 
 ## 🔑 Key Features
 
-- ✅ Service Discovery → Eureka handles dynamic registration & lookup
+- ✅ **Service Discovery** → Eureka handles dynamic registration & lookup
 
-- ✅ API Gateway → Single entry point, routing, load balancing
+- ✅ **API Gateway** → Single entry point, routing, load balancing
 
-- ✅ Database-per-service → Each microservice has its own schema
+- ✅ **Database-per-service** → Each microservice has its own schema
 
-- ✅ Inter-Service Communication → Quiz Service uses Feign to call Question Service
+- ✅ **Inter-Service Communication** → Quiz Service uses Feign to call Question Service
 
-- ✅ Randomized Questions → SQL ORDER BY RANDOM() ensures variety
+- ✅ **Randomized Questions** → SQL ORDER BY RANDOM() ensures variety
